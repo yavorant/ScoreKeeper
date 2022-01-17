@@ -28,6 +28,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 3px 3px 3px grey;
 }
 
 main {
@@ -37,6 +38,7 @@ main {
 footer {
   flex-direction: row;
   align-items: stretch;
+  background-color: #d3d3d3;
 }
 
 button {
@@ -86,4 +88,10 @@ header {
 
 .parInfo {
   margin: 0.5rem;
+}
+
+.input {
+  margin: 0 1rem;
+  border-radius: 1rem;
+  padding-left: 1rem;
 }
