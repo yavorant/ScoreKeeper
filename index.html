@@ -4,7 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Score Keeper</title>
   </head>
-  <body></body>
+  <body>
+    <section class="container">
+      <header></header>
+
+      <article>Ping Pong Score Keeper</article>
+
+      <main>
+        <h1>
+          0 to 0
+        </h1>
+        <p class="parInfo">
+          Use the button below to keep score
+        </p>
+        <h2>
+          Playing To
+          <input
+            type="number"
+            id="number"
+            class="number"
+            name="number"
+            min="3"
+            max="11"
+          />
+        </h2>
+      </main>
+
+      <footer>
+        <button class="greenBtn">+1 Player One</button>
+        <button class="blueBtn">+1 Player Two</button>
+        <button class="redBtn">Reset</button>
+      </footer>
+    </section>
+  </body>
 </html>
