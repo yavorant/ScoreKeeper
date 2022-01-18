@@ -14,15 +14,20 @@ let blueBtnClicked = 0;
 
 greenBtn.addEventListener('click', (event) => {
     greenBtnClicked ++;
-    h1.textContent = `${greenBtnClicked} to ${blueBtnClicked}`;
+    h1.innerHTML = `<span class="firstSpan">${greenBtnClicked} </span>to<span class="secondSpan"> ${blueBtnClicked}</span>`;
     if (greenBtnClicked === qtyOfRounds) {
-        
+        const firstSpan = document.querySelector('.firstSpan');
+        firstSpan.classList.add("greenColor");
     }
 });
 
 blueBtn.addEventListener('click', (event) => {
     blueBtnClicked ++;
-    h1.textContent = `${greenBtnClicked} to ${blueBtnClicked}`;
+    h1.innerHTML = `<span class="firstSpan">${greenBtnClicked} </span>to<span class="secondSpan"> ${blueBtnClicked}</span>`;
+    if (blueBtnClicked === qtyOfRounds) {
+        const secondSpan = document.querySelector('.secondSpan');
+        secondSpan.classList.add("blueColor");
+    }
 });
 
 redBtn.addEventListener('click', (event) => {

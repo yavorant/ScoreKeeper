@@ -95,3 +95,15 @@ header {
   border-radius: 1rem;
   padding-left: 1rem;
 }
+
+span {
+  font-size: 3rem;
+}
+
+.greenColor {
+  color: rgb(32, 187, 32);
+}
+
+.blueColor {
+  color: rgb(36, 36, 230);
+}
