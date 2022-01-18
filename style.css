@@ -107,3 +107,11 @@ span {
 .blueColor {
   color: rgb(36, 36, 230);
 }
+
+.greenColorEnd {
+  color: rgba(32, 187, 32, 0.3);
+}
+
+.blueColorEnd {
+  color: rgb(36, 36, 230, 0.3);
+}

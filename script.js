@@ -18,6 +18,8 @@ greenBtn.addEventListener('click', (event) => {
     if (greenBtnClicked === qtyOfRounds) {
         const firstSpan = document.querySelector('.firstSpan');
         firstSpan.classList.add("greenColor");
+        document.querySelector('.greenBtn').disabled = true;
+        document.querySelector('.blueBtn').disabled = true;
     }
 });
 
@@ -27,6 +29,8 @@ blueBtn.addEventListener('click', (event) => {
     if (blueBtnClicked === qtyOfRounds) {
         const secondSpan = document.querySelector('.secondSpan');
         secondSpan.classList.add("blueColor");
+        document.querySelector('.greenBtn').disabled = true;
+        document.querySelector('.blueBtn').disabled = true;
     }
 });
 
@@ -34,4 +38,6 @@ redBtn.addEventListener('click', (event) => {
     greenBtnClicked = 0;
     blueBtnClicked = 0;
     h1.textContent = `${greenBtnClicked} to ${blueBtnClicked}`;
+    document.querySelector('.greenBtn').disabled = false;
+    document.querySelector('.blueBtn').disabled = false;
 });
