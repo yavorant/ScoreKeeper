@@ -52,7 +52,7 @@ button {
 }
 
 .greenBtn:hover {
-  background-color: rgb(30, 173, 30);
+  background-color: rgb(28, 165, 28);
 }
 
 .blueBtn {
@@ -60,7 +60,7 @@ button {
 }
 
 .blueBtn:hover {
-  background-color: rgb(34, 34, 212);
+  background-color: rgb(28, 28, 200);
 }
 
 .redBtn {
@@ -68,7 +68,7 @@ button {
 }
 
 .redBtn:hover {
-  background-color: rgb(190, 25, 25);
+  background-color: rgb(180, 23, 23);
 }
 
 .container {
@@ -108,10 +108,12 @@ span {
   color: rgb(36, 36, 230);
 }
 
-.greenColorEnd {
-  color: rgba(32, 187, 32, 0.3);
+.greenColorEnd,
+.greenColorEnd:hover {
+  background-color: rgba(32, 187, 32, 0.3);
 }
 
-.blueColorEnd {
-  color: rgb(36, 36, 230, 0.3);
+.blueColorEnd,
+.blueColorEnd:hover {
+  background-color: rgb(36, 36, 230, 0.3);
 }

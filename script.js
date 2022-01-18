@@ -20,6 +20,8 @@ greenBtn.addEventListener('click', (event) => {
         firstSpan.classList.add("greenColor");
         document.querySelector('.greenBtn').disabled = true;
         document.querySelector('.blueBtn').disabled = true;
+        greenBtn.classList.add("greenColorEnd");
+        blueBtn.classList.add("blueColorEnd");
     }
 });
 
@@ -31,6 +33,8 @@ blueBtn.addEventListener('click', (event) => {
         secondSpan.classList.add("blueColor");
         document.querySelector('.greenBtn').disabled = true;
         document.querySelector('.blueBtn').disabled = true;
+        greenBtn.classList.add("greenColorEnd");
+        blueBtn.classList.add("blueColorEnd");
     }
 });
 
@@ -40,4 +44,6 @@ redBtn.addEventListener('click', (event) => {
     h1.textContent = `${greenBtnClicked} to ${blueBtnClicked}`;
     document.querySelector('.greenBtn').disabled = false;
     document.querySelector('.blueBtn').disabled = false;
+    greenBtn.classList.remove("greenColorEnd");
+    blueBtn.classList.remove("blueColorEnd");
 });
